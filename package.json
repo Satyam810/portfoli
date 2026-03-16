@@ -1,0 +1,56 @@
+{
+  "name": "satyam-kumar-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": {
+    "name": "Satyam Kumar",
+    "email": "satyamvatsa810@gmail.com",
+    "url": "https://github.com/Satyam810"
+  },
+  "description": "Portfolio of Satyam Kumar — AI & ML Engineer, Computer Science student at LPU.",
+  "keywords": [
+    "satyam kumar",
+    "satyam kumar lpu",
+    "satyam kumar ai ml",
+    "satyam kumar portfolio",
+    "ai ml engineer",
+    "machine learning",
+    "deep learning",
+    "python developer",
+    "nextjs portfolio",
+    "react portfolio"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@react-three/drei": "^9.93.0",
+    "@react-three/fiber": "^8.15.13",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.17.12",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.5.3",
+    "react-use-measure": "^2.1.7",
+    "tailwind-merge": "^2.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

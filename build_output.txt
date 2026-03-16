@@ -1,0 +1,52 @@
+﻿
+> satyam-kumar-portfolio@1.0.0 build
+> next build
+
+  Γû▓ Next.js 14.2.15
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+node.exe : Failed to compile.
+At line:1 char:1
++ & "D:\Application\Node/node.exe" 
+"C:\Users\hp\AppData\Roaming\npm/nod ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Fai 
+   led to compile.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./components/main/star-background.tsx:7:43
+Type error: Could not find a declaration file 
+for module 'three'. 'D:/Sem6/satyam-portfolio_v2/
+node_modules/three/build/three.module.js' 
+implicitly has an 'any' type.
+  Try `npm i --save-dev @types/three` if it 
+exists or add a new declaration (.d.ts) file 
+containing `declare module 'three';`
+
+[0m [90m  5 |[39m [36mimport[39m 
+[33m*[39m [36mas[39m random [36mfrom[39m 
+[32m"maath/random"[39m[33m;[39m[0m
+[0m [90m  6 |[39m [36mimport[39m { 
+useState[33m,[39m useRef[33m,[39m 
+[33mSuspense[39m } [36mfrom[39m 
+[32m"react"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m  7 |[39m 
+[36mimport[39m type { [33mPoints[39m 
+[36mas[39m [33mPointsType[39m } 
+[36mfrom[39m [32m"three"[39m[33m;[39m[0m
+[0m [90m    |[39m                             
+              [31m[1m^[22m[39m[0m
+[0m [90m  8 |[39m[0m
+[0m [90m  9 |[39m [36mexport[39m 
+[36mconst[39m [33mStarBackground[39m 
+[33m=[39m (props[33m:[39m 
+[33mPointsProps[39m) [33m=>[39m {[0m
+[0m [90m 10 |[39m   [36mconst[39m ref 
+[33m=[39m 
+useRef[33m<[39m[33mPointsType[39m 
+[33m|[39m [36mnull[39m[33m>[39m([36mnull[
+39m)[33m;[39m[0m
