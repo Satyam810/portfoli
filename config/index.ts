@@ -88,4 +88,7 @@ export const siteConfig: Metadata = {
   },
 
   category: "technology",
+  verification: {
+    google: "LRz2LsE1jLINIObUQnMqiOuTpFoLGiwq4W8FCpQphXY",
+  },
 };
