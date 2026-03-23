@@ -148,25 +148,6 @@ export const Skills = () => {
           Technical Skills &amp; Tools
         </motion.h2>
 
-        {/* subtitle */}
-        <motion.p
-          variants={fadeUp(0.15)}
-          className="mb-2.5 max-w-[560px]"
-          style={{ fontSize: "15px", color: "rgba(255,255,255,0.55)" }}
-        >
-          Every project starts with the right tools. Here&apos;s the stack I rely on
-          to turn ideas into working software.
-        </motion.p>
-
-        {/* live skill count */}
-        <motion.p
-          variants={fadeUp(0.2)}
-          className="mb-8 text-[13px] font-medium"
-          style={{ color: "#e2e8f0" }}
-        >
-          Showing all{" "}
-          <span className="text-white font-bold">{filtered.length}</span> skills
-        </motion.p>
 
         {/* ── search bar ── */}
         <motion.div

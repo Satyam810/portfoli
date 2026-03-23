@@ -190,6 +190,10 @@ export const NAV_LINKS = [
     link: "#about-me",
   },
   {
+    title: "Education",
+    link: "#education",
+  },
+  {
     title: "Skills",
     link: "#skills",
   },

@@ -22,11 +22,11 @@ export const events: EventItem[] = [
     conf: "OOSC '24",
     title: "Open Source Conference",
     meta: "Speaker · Nov 2024 · 200+ attendees",
-    badge: "★ SPEAKER",
-    accent: "#b8f542",
+    badge: "PARTICIPANT",
+    accent: "#a78bfa",
     featured: true,
-    bgGradient: "linear-gradient(135deg, #1a3a1a 0%, #2d5a1e 100%)",
-    certificateLink: "/certifications/OOSC_certificate.jpg", // Example cert
+    bgGradient: "linear-gradient(135deg, #1a1240 0%, #0d0b20 100%)",
+    certificateLink: "/certifications/OOSC_certificate.jpg",
   },
   {
     id: 2,
@@ -34,11 +34,11 @@ export const events: EventItem[] = [
     institute: "IIT ROPAR",
     conf: "ADVITIYA '25",
     title: "Annual Techfest",
-    meta: "Presenter · Feb 2025 · Inter-IIT event",
-    badge: "PRESENTER",
-    accent: "#4df0e0",
+    meta: "Participant · Feb 2025 · Inter-IIT event",
+    badge: "PARTICIPANT",
+    accent: "#a78bfa",
     featured: false,
-    bgGradient: "linear-gradient(135deg, #0d2d48 0%, #0a4060 100%)",
+    bgGradient: "linear-gradient(135deg, #1a1240 0%, #0d0b20 100%)",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const events: EventItem[] = [
     badge: "VOLUNTEER",
     accent: "#a78bfa",
     featured: false,
-    bgGradient: "linear-gradient(135deg, #2d1b69 0%, #1a1240 100%)",
+    bgGradient: "linear-gradient(135deg, #1a1240 0%, #0d0b20 100%)",
   },
   {
     id: 4,
@@ -60,8 +60,9 @@ export const events: EventItem[] = [
     title: "Hostel President",
     meta: "Elected · 2024 · 500+ students",
     badge: "LEADERSHIP",
-    accent: "#f6ad55",
+    accent: "#a78bfa",
     featured: false,
-    bgGradient: "linear-gradient(135deg, #3d1f00 0%, #5a3000 100%)",
+    bgGradient: "linear-gradient(135deg, #1a1240 0%, #0d0b20 100%)",
   },
 ];
+

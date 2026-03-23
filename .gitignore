@@ -25,6 +25,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# build logs & output artifacts (local only)
+build*.log
+build*.txt
+install*.txt
+
+# one-off scripts
+*.py
+
 # local env files
 .env*.local
 

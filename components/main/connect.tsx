@@ -3,19 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
 import { HiMail } from "react-icons/hi";
+
+import { SOCIALS } from "@/constants";
 
 const fadeUp = (delay = 0) => ({
   hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.55, delay, ease: "easeOut" } },
 });
 
-const SOCIALS = [
-  { icon: RxGithubLogo, label: "GitHub", handle: "@Satyam810", href: "https://github.com/Satyam810" },
-  { icon: RxLinkedinLogo, label: "LinkedIn", handle: "@satyamlpu", href: "https://www.linkedin.com/in/satyamlpu/" },
-  { icon: RxTwitterLogo, label: "Twitter / X", handle: "@SatyamVats863", href: "https://x.com/SatyamVats863" },
-];
+
 
 /* ════════════════════════════════════════════════════════ */
 export const Connect = () => {
@@ -61,7 +58,7 @@ export const Connect = () => {
               className="object-cover w-full h-full scale-105 hover:scale-100 transition-transform duration-500 bg-[#07070f]"
             />
           </div>
-          
+
           {/* decorative floating circles around the photo */}
           <div
             className="absolute -top-6 -right-6 w-24 h-24 rounded-full pointer-events-none"
@@ -106,7 +103,7 @@ export const Connect = () => {
 
           {/* heading */}
           <motion.h2 variants={fadeUp(0.2)} className="font-bold text-white leading-[1.08]" style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(38px, 5vw, 64px)" }}>
-            Let&apos;s Build <br className="hidden md:block"/> Something{" "}
+            Let&apos;s Build <br className="hidden md:block" /> Something{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #a78bfa, #67e8f9)",
@@ -140,7 +137,7 @@ export const Connect = () => {
             >
               <div className="flex items-center gap-4 mb-3 md:mb-0">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full" style={{ background: "rgba(124,58,237,0.15)", border: "1px solid rgba(167,139,250,0.3)" }}>
-                   <HiMail className="w-6 h-6" style={{ color: "#a78bfa" }} />
+                  <HiMail className="w-6 h-6" style={{ color: "#a78bfa" }} />
                 </div>
                 <div className="flex flex-col text-center md:text-left">
                   <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Email Me At</span>
@@ -148,7 +145,7 @@ export const Connect = () => {
                 </div>
               </div>
               <div className="px-5 py-2.5 rounded-xl font-bold tracking-widest uppercase transition-all duration-300 group-hover:bg-[#a78bfa] group-hover:text-[#0a0718]"
-                   style={{ fontSize: "12px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "#fff" }}>
+                style={{ fontSize: "12px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "#fff" }}>
                 Send Email ↗
               </div>
             </Link>
@@ -156,12 +153,13 @@ export const Connect = () => {
 
           {/* social & cv */}
           <motion.div variants={fadeUp(0.5)} className="flex flex-wrap justify-center md:justify-start gap-4 mt-2 w-full">
-            {SOCIALS.map(({ icon: Icon, label, href }) => (
+            {SOCIALS.map(({ icon: Icon, name, link }) => (
               <Link
-                key={label}
-                href={href}
+                key={name}
+                href={link}
                 target="_blank"
                 rel="noreferrer noopener"
+                aria-label={`Visit my ${name} profile`}
                 className="flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300"
                 style={{
                   background: "rgba(255,255,255,0.03)",
